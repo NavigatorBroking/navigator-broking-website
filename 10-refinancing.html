@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Loan Refinancing Melbourne | Navigator Broking</title>
+    <meta name="description" content="Refinance your home loan in Melbourne for better rates, improved features, or cash flow optimization. Expert guidance from Navigator Broking to maximize your savings.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, rgba(0, 181, 165, 0.9), rgba(0, 51, 102, 0.8)), url('Navigator Broking Stock photos/GettyImages-954493034_B&W.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 80px;
+        }
+        .page-hero .hero-title {
+            color: white !important;
+        }
+        .page-hero .hero-subtitle {
+            color: white !important;
+        }
+        .top-reasons {
+            padding: 5rem 0;
+            background: var(--gray-light);
+        }
+        .reason-card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-left: 6px solid var(--primary-teal);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .reason-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        .reason-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .reason-number {
+            background: var(--primary-teal);
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .savings-calculator {
+            background: var(--navy);
+            color: white;
+            padding: 4rem 0;
+        }
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .calc-example {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .savings-amount {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-teal);
+            display: block;
+            margin: 1rem 0;
+        }
+        .refinance-process {
+            padding: 4rem 0;
+            background: white;
+        }
+        .process-timeline {
+            position: relative;
+            margin: 3rem 0;
+        }
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .step-icon {
+            background: var(--primary-blue);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            z-index: 2;
+            position: relative;
+        }
+        .process-step:not(:last-child) .step-icon:after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 60px;
+            background: var(--light-blue);
+        }
+        .when-to-refinance {
+            background: var(--light-teal);
+            padding: 4rem 0;
+        }
+        .trigger-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .trigger-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .trigger-icon {
+            background: var(--primary-blue);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+        }
+        .cost-breakdown {
+            background: white;
+            padding: 4rem 0;
+        }
+        .cost-table {
+            background: var(--gray-light);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .cost-row:last-child {
+            border-bottom: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .reason-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="Navigator Logo Images PNG and JPG/PNG and JPG/Navigator-logo-500px.png" alt="Navigator Broking" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="01-index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                            <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                            <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                            <li><a href="06-investment-property.html">Investment Property</a></li>
+                            <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                            <li><a href="10-refinancing.html">Refinancing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="02-about.html" class="nav-link">About Santino</a></li>
+                    <li><a href="08-client-stories.html" class="nav-link">Client Stories</a></li>
+                    <li><a href="09-contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:0405678979" class="phone-btn"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="cta-btn">Book Strategy Call</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Home Loan Refinancing That Saves You Money</h1>
+                <p class="hero-subtitle">Optimize your existing loan with better rates, improved features, or enhanced cash flow. Our refinancing expertise can save you thousands annually.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">$50K+</span>
+                        <span class="stat-label">Average Client Savings</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">Successful Refinances</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2-3 Weeks</span>
+                        <span class="stat-label">Average Settlement Time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 3 Reasons to Refinance -->
+    <section class="top-reasons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top 3 Reasons Australians Refinance Their Home Loans</h2>
+                <p>Discover why thousands of homeowners switch lenders every year</p>
+            </div>
+            
+            <div class="reason-card">
+                <div class="reason-header">
+                    <div class="reason-number">1</div>
+                    <div>
+                        <h3>Secure a Lower Interest Rate</h3>
+                        <p class="subtitle">Save thousands annually with competitive rates</p>
+                    </div>
+                </div>
+                <div class="reason-content">
+                    <p><strong>The #1 reason Australians refinance</strong> - Interest rates change constantly, and your current lender may no longer offer the most competitive rate in the market.</p>
+                    
+                    <h4>Real Example:</h4>
+                    <div class="calc-example" style="background: var(--light-blue); color: var(--navy); margin: 1.5rem 0;">
+                        <p><strong>Loan Amount:</strong> $600,000 | <strong>Term:</strong> 25 years remaining</p>
+                        <p><strong>Current Rate:</strong> 6.5% → <strong>New Rate:</strong> 5.8%</p>
+                        <span class="savings-amount" style="color: var(--primary-blue);">$52,000</span>
+                        <p>Total interest savings over the life of the loan</p>
+                        <p><strong>Monthly Savings:</strong> $278/month</p>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Market Competition:</strong> Over 60 lenders competing for your business</li>
+                        <li><strong>Rate Differentials:</strong> Even 0.5% can save $25,000+ over loan life</li>
+                        <li><strong>Loyalty Tax:</strong> Existing customers often pay higher rates than new customers</li>
+                        <li><strong>Regular Reviews:</strong> Rates should be reviewed annually for optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reason-card">
+                <div class="reason-header">
+                    <div class="reason-number">2</div>
+                    <div>
+                        <h3>Access Better Loan Features</h3>
+                        <p class="subtitle">Upgrade to modern loan products with superior benefits</p>
+                    </div>
+                </div>
+                <div class="reason-content">
+                    <p><strong>Loan features have evolved significantly</strong> - Your current loan may lack modern features that could save you money and provide greater flexibility.</p>
+                    
+                    <h4>Popular Feature Upgrades:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                        <div style="background: var(--light-teal); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-piggy-bank"></i> 100% Offset Account</h5>
+                            <p>Reduce interest on every dollar in your offset</p>
+                        </div>
+                        <div style="background: var(--light-teal); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-mobile-alt"></i> Modern Digital Banking</h5>
+                            <p>Advanced apps, instant transfers, real-time tracking</p>
+                        </div>
+                        <div style="background: var(--light-teal); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-chart-line"></i> Redraw Facilities</h5>
+                            <p>Access extra payments when you need them</p>
+                        </div>
+                        <div style="background: var(--light-teal); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-calendar-alt"></i> Flexible Repayments</h5>
+                            <p>Weekly, fortnightly, or monthly payment options</p>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Package Deals:</strong> Professional packages with fee waivers and rate discounts</li>
+                        <li><strong>Construction Loans:</strong> Access facilities for renovations or extensions</li>
+                        <li><strong>Split Loans:</strong> Combination of fixed and variable rates</li>
+                        <li><strong>No Exit Fees:</strong> Greater flexibility to move in the future</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reason-card">
+                <div class="reason-header">
+                    <div class="reason-number">3</div>
+                    <div>
+                        <h3>Release Equity for Investment or Lifestyle</h3>
+                        <p class="subtitle">Unlock your property's increased value</p>
+                    </div>
+                </div>
+                <div class="reason-content">
+                    <p><strong>Property values have grown significantly</strong> - You may have substantial equity available to fund investments, renovations, or other financial goals.</p>
+                    
+                    <h4>Equity Release Example:</h4>
+                    <div class="calc-example" style="background: var(--light-blue); color: var(--navy); margin: 1.5rem 0;">
+                        <p><strong>Original Purchase:</strong> $800,000 (2019) | <strong>Current Value:</strong> $1,200,000</p>
+                        <p><strong>Remaining Loan:</strong> $650,000 | <strong>Available Equity (80% LVR):</strong> $310,000</p>
+                        <span class="savings-amount" style="color: var(--primary-blue);">$310,000</span>
+                        <p>Available for investment property, renovations, or debt consolidation</p>
+                    </div>
+                    
+                    <h4>Popular Uses for Released Equity:</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                        <div style="background: var(--light-blue); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-building"></i> Investment Property Purchase</h5>
+                            <p>Build wealth through property investment</p>
+                        </div>
+                        <div style="background: var(--light-blue); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-tools"></i> Home Renovations</h5>
+                            <p>Add value and improve lifestyle</p>
+                        </div>
+                        <div style="background: var(--light-blue); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-compress-arrows-alt"></i> Debt Consolidation</h5>
+                            <p>Pay off high-interest credit cards and personal loans</p>
+                        </div>
+                        <div style="background: var(--light-blue); padding: 1.5rem; border-radius: 8px;">
+                            <h5><i class="fas fa-chart-pie"></i> Share Portfolio</h5>
+                            <p>Diversify investments beyond property</p>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Tax Benefits:</strong> Interest may be tax deductible for investment purposes</li>
+                        <li><strong>Lower Rates:</strong> Home equity rates are typically lower than personal loans</li>
+                        <li><strong>Flexible Access:</strong> Line of credit options for ongoing access</li>
+                        <li><strong>Wealth Building:</strong> Leverage property growth for additional investments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- When to Consider Refinancing -->
+    <section class="when-to-refinance">
+        <div class="container">
+            <div class="section-header">
+                <h2>When Should You Consider Refinancing?</h2>
+                <p>Key triggers that indicate it's time to review your home loan</p>
+            </div>
+            <div class="trigger-grid">
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Rate Rise Alert</h3>
+                    <p>Your lender increases rates but competitors don't follow, or you're on a high variable rate</p>
+                </div>
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Fixed Rate Expiry</h3>
+                    <p>Your fixed rate period is ending and reverting to a higher variable rate</p>
+                </div>
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Value Growth</h3>
+                    <p>Your property has increased in value, improving your loan-to-value ratio and access to better rates</p>
+                </div>
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Income Improvement</h3>
+                    <p>Your financial position has strengthened, qualifying you for premium loan products</p>
+                </div>
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Annual Review</h3>
+                    <p>It's been 12+ months since you last reviewed your loan - rates and products change constantly</p>
+                </div>
+                <div class="trigger-item">
+                    <div class="trigger-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Service Issues</h3>
+                    <p>Poor customer service, slow processing, or lack of support from your current lender</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refinancing Process -->
+    <section class="refinance-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Streamlined Refinancing Process</h2>
+                <p>Making your switch as smooth and stress-free as possible</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-icon">1</div>
+                    <div class="step-content">
+                        <h3>Loan Health Check</h3>
+                        <p>Comprehensive review of your current loan, rates, features, and potential savings opportunities.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">2</div>
+                    <div class="step-content">
+                        <h3>Market Comparison</h3>
+                        <p>We compare 60+ lenders to find the best rates, features, and terms for your specific situation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">3</div>
+                    <div class="step-content">
+                        <h3>Application & Approval</h3>
+                        <p>Submit your application with the chosen lender and manage the approval process on your behalf.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">4</div>
+                    <div class="step-content">
+                        <h3>Settlement & Switch</h3>
+                        <p>Coordinate settlement, discharge your old loan, and ensure seamless transition to your new lender.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Breakdown -->
+    <section class="cost-breakdown">
+        <div class="container">
+            <div class="section-header">
+                <h2>Refinancing Costs vs Savings</h2>
+                <p>Understanding the investment required and potential returns</p>
+            </div>
+            <div class="cost-table">
+                <h3>Typical Refinancing Costs:</h3>
+                <div class="cost-row">
+                    <span>Valuation Fee</span>
+                    <span>$300 - $600</span>
+                </div>
+                <div class="cost-row">
+                    <span>Legal/Settlement Fees</span>
+                    <span>$800 - $1,500</span>
+                </div>
+                <div class="cost-row">
+                    <span>Lenders Mortgage Insurance (if LVR >80%)</span>
+                    <span>$0 - $15,000+</span>
+                </div>
+                <div class="cost-row">
+                    <span>Application/Establishment Fees</span>
+                    <span>$0 - $1,000</span>
+                </div>
+                <div class="cost-row">
+                    <span><strong>Total Typical Cost</strong></span>
+                    <span><strong>$1,500 - $3,000</strong></span>
+                </div>
+            </div>
+            <div style="background: var(--primary-teal); color: white; padding: 2rem; border-radius: 12px; margin-top: 2rem; text-align: center;">
+                <h3>Break-Even Analysis</h3>
+                <p>Most clients save enough in 6-12 months to cover all refinancing costs</p>
+                <p><strong>Example:</strong> $200/month savings = $2,400/year vs $2,000 in costs = 10 months payback</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Saving on Your Home Loan?</h2>
+                <p>Book a free refinancing review to discover how much you could save with better rates and features.</p>
+                <div class="cta-buttons">
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="btn-primary">Book Free Loan Review</a>
+                    <a href="tel:0405678979" class="btn-secondary">Call for Instant Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navigator Broking</h3>
+                    <p>Melbourne's specialist mortgage brokers for medical professionals and high-net-worth families.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:0405678979">Call Now</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@navigatorbroking.com.au">info@navigatorbroking.com.au</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Bayside Suburbs</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                        <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                        <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                        <li><a href="06-investment-property.html">Investment Property</a></li>
+                        <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                        <li><a href="10-refinancing.html">Refinancing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="02-about.html">About Santino</a></li>
+                        <li><a href="08-client-stories.html">Client Stories</a></li>
+                        <li><a href="09-contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Actions</h4>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="footer-cta">Book Strategy Call</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Google Reviews"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-info">
+                    <p>&copy; 2025 Navigator Broking Pty Ltd. All rights reserved.</p>
+                    <p>Credit Representative No. 473888 under Credit Licence 389328</p>
+                    <p>This website contains general information only and does not take into account your objectives, financial situation or needs.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

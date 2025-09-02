@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Consolidation Melbourne - Simplify Multiple Payments | Navigator Broking</title>
+    <meta name="description" content="Consolidate multiple debts into one simple payment. Melbourne debt consolidation specialist Santino Marinelli helps save thousands in interest and improve cash flow.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, rgba(0, 181, 165, 0.9), rgba(0, 51, 102, 0.8)), url('Navigator Broking Stock photos/GettyImages-1146680857_B&W.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 80px;
+        }
+        .page-hero .hero-title {
+            color: white !important;
+        }
+        .page-hero .hero-subtitle {
+            color: white !important;
+        }
+        .calculator-section {
+            padding: 4rem 0;
+            background: var(--light-blue);
+        }
+        .calculator-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .debt-input {
+            background: var(--gray-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .debt-input input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+        .debt-input label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--gray-dark);
+            margin-bottom: 0.25rem;
+        }
+        .add-debt-btn {
+            background: var(--secondary-blue);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .remove-debt {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: var(--danger);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .calculation-results {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--success);
+        }
+        .debt-types {
+            padding: 4rem 0;
+            background: white;
+        }
+        .debt-type-card {
+            background: var(--gray-light);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .debt-type-card:hover {
+            transform: translateY(-3px);
+        }
+        .debt-icon {
+            color: var(--danger);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .before-after {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .before, .after {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .before h3 {
+            color: var(--danger);
+        }
+        .after h3 {
+            color: var(--success);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="Navigator Logo Images PNG and JPG/PNG and JPG/Navigator-logo-500px.png" alt="Navigator Broking" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="01-index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                            <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                            <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                            <li><a href="06-investment-property.html">Investment Property</a></li>
+                            <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                            <li><a href="10-refinancing.html">Refinancing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="02-about.html" class="nav-link">About Santino</a></li>
+                    <li><a href="08-client-stories.html" class="nav-link">Client Stories</a></li>
+                    <li><a href="09-contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:0405678979" class="phone-btn"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="cta-btn">Book Strategy Call</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="hero-text">
+                    <h1 class="hero-title">From Multiple Payments to One Simple Solution</h1>
+                    <p class="hero-subtitle">Consolidate credit cards, personal loans, and other debts into one manageable payment. Save thousands in interest and improve your cash flow with Melbourne's debt consolidation specialist.</p>
+                    <div class="hero-cta">
+                        <a href="#calculator" class="btn-primary">Calculate Your Debt Consolidation Savings</a>
+                        <a href="tel:0405678979" class="btn-secondary"><i class="fas fa-phone"></i> Get Immediate Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Debt Types We Consolidate -->
+    <section class="debt-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Debts We Can Consolidate</h2>
+                <p>Combine multiple high-interest debts into one low-rate loan</p>
+            </div>
+            <div class="services-grid">
+                <div class="debt-type-card">
+                    <i class="fas fa-credit-card debt-icon"></i>
+                    <h3>Credit Cards</h3>
+                    <p>High interest rates up to 24% p.a.</p>
+                    <p><strong>Typical Rate:</strong> 18-24%</p>
+                </div>
+                <div class="debt-type-card">
+                    <i class="fas fa-user-tie debt-icon"></i>
+                    <h3>Personal Loans</h3>
+                    <p>Unsecured personal loans and lines of credit</p>
+                    <p><strong>Typical Rate:</strong> 8-15%</p>
+                </div>
+                <div class="debt-type-card">
+                    <i class="fas fa-car debt-icon"></i>
+                    <h3>Car Loans</h3>
+                    <p>Vehicle finance with higher rates</p>
+                    <p><strong>Typical Rate:</strong> 7-12%</p>
+                </div>
+                <div class="debt-type-card">
+                    <i class="fas fa-store debt-icon"></i>
+                    <h3>Store Cards</h3>
+                    <p>Retail store financing and buy-now-pay-later</p>
+                    <p><strong>Typical Rate:</strong> 15-25%</p>
+                </div>
+                <div class="debt-type-card">
+                    <i class="fas fa-chart-line debt-icon"></i>
+                    <h3>Investment Loans</h3>
+                    <p>Higher rate investment property loans</p>
+                    <p><strong>Typical Rate:</strong> 6-8%</p>
+                </div>
+                <div class="debt-type-card">
+                    <i class="fas fa-coins debt-icon"></i>
+                    <h3>Other Debts</h3>
+                    <p>Tax debts, business loans, overdrafts</p>
+                    <p><strong>Variable Rates</strong></p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border-left: 4px solid var(--success);">
+                <h3 style="color: var(--success); margin-bottom: 1rem;">Consolidate Into One Home Loan</h3>
+                <p style="font-size: 1.2rem; color: var(--gray-dark);"><strong>New Rate: From 5.89% p.a.*</strong></p>
+                <p style="color: var(--gray-medium); font-size: 0.9rem;">*Rate depends on loan amount, LVR, and credit assessment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Debt Consolidation Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Debt Consolidation Savings Calculator</h2>
+                <p>See how much you could save by consolidating your debts</p>
+            </div>
+            <div class="calculator-container">
+                <div id="debt-inputs">
+                    <div class="debt-input">
+                        <label>Debt Type</label>
+                        <select class="debt-type">
+                            <option value="credit-card">Credit Card (20% p.a.)</option>
+                            <option value="personal-loan">Personal Loan (12% p.a.)</option>
+                            <option value="car-loan">Car Loan (9% p.a.)</option>
+                            <option value="store-card">Store Card (22% p.a.)</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label>Balance</label>
+                        <input type="number" class="debt-balance" placeholder="e.g., 15000">
+                        <label>Minimum Monthly Payment</label>
+                        <input type="number" class="debt-payment" placeholder="e.g., 300">
+                    </div>
+                </div>
+                <button class="add-debt-btn" onclick="addDebtInput()">
+                    <i class="fas fa-plus"></i> Add Another Debt
+                </button>
+                <button class="btn-primary" onclick="calculateSavings()" style="width: 100%; margin-top: 1rem;">
+                    Calculate My Savings
+                </button>
+                <div class="calculation-results" id="results" style="display: none;">
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Your Debt Consolidation Analysis</h3>
+                    <div class="result-item">
+                        <span>Total Debt Amount:</span>
+                        <span id="total-debt">$0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Current Monthly Payments:</span>
+                        <span id="current-payments">$0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>New Consolidated Payment (5.89%):</span>
+                        <span id="new-payment">$0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Monthly Savings:</span>
+                        <span id="monthly-savings">$0</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Annual Savings:</span>
+                        <span id="annual-savings">$0</span>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="color: var(--gray-medium); font-size: 0.9rem; margin-bottom: 1rem;">
+                        *Calculations are estimates only. Actual rates and savings depend on your specific situation.
+                    </p>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="btn-primary">Get Accurate Assessment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Comparison -->
+    <section class="before-after">
+        <div class="container">
+            <div class="section-header">
+                <h2>Before vs After Debt Consolidation</h2>
+                <p>See the difference consolidation makes to your financial situation</p>
+            </div>
+            <div class="comparison">
+                <div class="before">
+                    <h3><i class="fas fa-times-circle" style="color: var(--danger); margin-right: 0.5rem;"></i>Before Consolidation</h3>
+                    <ul style="color: var(--gray-dark); line-height: 2;">
+                        <li>5+ different payment dates each month</li>
+                        <li>Interest rates from 12% to 24%</li>
+                        <li>Minimum payments = $1,850/month</li>
+                        <li>Stress managing multiple accounts</li>
+                        <li>Limited cash flow for savings</li>
+                        <li>Years to pay off debts</li>
+                        <li>Total interest paid: $45,000+</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3><i class="fas fa-check-circle" style="color: var(--success); margin-right: 0.5rem;"></i>After Consolidation</h3>
+                    <ul style="color: var(--gray-dark); line-height: 2;">
+                        <li>One payment date each month</li>
+                        <li>Low home loan rate: 5.89%</li>
+                        <li>New payment = $1,200/month</li>
+                        <li>Simple, stress-free management</li>
+                        <li>Extra $650/month for savings</li>
+                        <li>Faster debt elimination</li>
+                        <li>Total interest saved: $25,000+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Story: The Johnson Family</h2>
+                <p>How we saved them $528,000 over 25 years</p>
+            </div>
+            <div style="background: var(--gray-light); padding: 2rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); max-width: 900px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center; margin-bottom: 2rem;">
+                    <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Happy family after debt consolidation" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                    <div>
+                        <h3 style="color: var(--navy); margin-bottom: 0.5rem;">The Johnson Family</h3>
+                        <p style="color: var(--gray-medium); margin: 0;">Melbourne Professionals with Growing Debt</p>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(239, 68, 68, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--danger); margin-bottom: 2rem;">
+                    <h4 style="color: var(--danger); margin-bottom: 1rem;">The Problem:</h4>
+                    <ul style="color: var(--gray-dark);">
+                        <li>$35,000 credit card debt across 4 cards (18-22% interest)</li>
+                        <li>$25,000 personal loan (14% interest)</li>
+                        <li>$18,000 car loan (11% interest)</li>
+                        <li>Total monthly payments: $2,100</li>
+                        <li>Struggling to make ends meet</li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--success); margin-bottom: 2rem;">
+                    <h4 style="color: var(--success); margin-bottom: 1rem;">The Solution:</h4>
+                    <ul style="color: var(--gray-dark);">
+                        <li>Consolidated $78,000 into home loan at 5.89%</li>
+                        <li>New monthly payment: $1,200</li>
+                        <li>Monthly savings: $900</li>
+                        <li>Used equity in their home</li>
+                        <li>No additional fees or charges</li>
+                    </ul>
+                </div>
+
+                <blockquote style="font-style: italic; font-size: 1.1rem; color: var(--gray-dark); margin: 2rem 0; border-left: 4px solid var(--primary-blue); padding-left: 1rem;">
+                    "Santino turned our financial nightmare into a dream. We went from drowning in debt to having $900 extra each month. The stress relief alone was worth it, but saving over half a million dollars long-term has changed our family's future."
+                </blockquote>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; text-align: center;">
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <strong style="color: var(--success); font-size: 1.3rem;">$900</strong>
+                        <p style="margin: 0; font-size: 0.9rem;">Monthly Savings</p>
+                    </div>
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <strong style="color: var(--success); font-size: 1.3rem;">$10,800</strong>
+                        <p style="margin: 0; font-size: 0.9rem;">Annual Savings</p>
+                    </div>
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <strong style="color: var(--success); font-size: 1.3rem;">$528,000</strong>
+                        <p style="margin: 0; font-size: 0.9rem;">25-Year Savings</p>
+                    </div>
+                    <div style="padding: 1rem; background: white; border-radius: 8px;">
+                        <strong style="color: var(--success); font-size: 1.3rem;">5.89%</strong>
+                        <p style="margin: 0; font-size: 0.9rem;">New Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section style="background: var(--light-blue); padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Debt Consolidation Process</h2>
+                <p>Simple, fast, and stress-free consolidation</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--primary-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">1</div>
+                    <h4>Free Assessment</h4>
+                    <p>I review all your debts and calculate potential savings</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--primary-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">2</div>
+                    <h4>Strategy Development</h4>
+                    <p>Create a consolidation plan tailored to your situation</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--primary-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">3</div>
+                    <h4>Lender Matching</h4>
+                    <p>Find the best consolidation loan from our 60+ lenders</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--primary-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">4</div>
+                    <h4>Application & Approval</h4>
+                    <p>Handle all paperwork and liaise with lenders</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--primary-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">5</div>
+                    <h4>Debt Payoff</h4>
+                    <p>Coordinate paying off all your existing debts</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="background: var(--success); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">✓</div>
+                    <h4>Financial Freedom</h4>
+                    <p>Enjoy one simple payment and improved cash flow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Consolidate Your Debts?</h2>
+                <p>Start your journey to financial freedom with a personalized debt consolidation assessment.</p>
+                <div style="max-width: 500px; margin: 2rem auto; background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px;">
+                    <form data-source="debt-consolidation" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <input type="text" name="fullName" placeholder="Full Name *" required style="padding: 1rem; border: none; border-radius: 6px; font-size: 1rem;">
+                        <input type="tel" name="phone" placeholder="Phone Number *" required style="padding: 1rem; border: none; border-radius: 6px; font-size: 1rem;">
+                        <input type="email" name="email" placeholder="Email Address *" required style="padding: 1rem; border: none; border-radius: 6px; font-size: 1rem;">
+                        <select name="debtAmount" required style="padding: 1rem; border: none; border-radius: 6px; font-size: 1rem;">
+                            <option value="">Total Debt Amount *</option>
+                            <option value="10k-25k">$10K - $25K</option>
+                            <option value="25k-50k">$25K - $50K</option>
+                            <option value="50k-100k">$50K - $100K</option>
+                            <option value="100k+">Over $100K</option>
+                        </select>
+                        <select name="debtTypes" required style="padding: 1rem; border: none; border-radius: 6px; font-size: 1rem;">
+                            <option value="">Primary Debt Types *</option>
+                            <option value="credit-cards">Credit Cards</option>
+                            <option value="personal-loans">Personal Loans</option>
+                            <option value="mixed">Mixed Debts</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <button type="submit" class="btn-primary" style="align-self: center; margin-top: 1rem;">Get My Debt Consolidation Assessment</button>
+                    </form>
+                </div>
+                <a href="tel:0405678979" class="btn-secondary"><i class="fas fa-phone"></i> Call for Immediate Help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navigator Broking</h3>
+                    <p>Melbourne's specialist mortgage brokers for medical professionals and high-net-worth families.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:0405678979">Call Now</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@navigatorbroking.com.au">info@navigatorbroking.com.au</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Bayside Suburbs</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                        <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                        <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                        <li><a href="06-investment-property.html">Investment Property</a></li>
+                        <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                            <li><a href="10-refinancing.html">Refinancing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="02-about.html">About Santino</a></li>
+                        <li><a href="08-client-stories.html">Client Stories</a></li>
+                        <li><a href="09-contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Actions</h4>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="footer-cta">Book Strategy Call</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Google Reviews"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-info">
+                    <p>&copy; 2025 Navigator Broking Pty Ltd. All rights reserved.</p>
+                    <p>Credit Representative No. 473888 under Credit Licence 389328</p>
+                    <p>This website contains general information only and does not take into account your objectives, financial situation or needs.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="floating-btn">
+            <i class="fas fa-calendar"></i> Book Call
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="form-handler.js"></script>
+    <script>
+        let debtCount = 1;
+
+        function addDebtInput() {
+            debtCount++;
+            const debtInputsContainer = document.getElementById('debt-inputs');
+            const newDebtInput = document.createElement('div');
+            newDebtInput.className = 'debt-input';
+            newDebtInput.innerHTML = `
+                <button class="remove-debt" onclick="removeDebt(this)">×</button>
+                <label>Debt Type</label>
+                <select class="debt-type">
+                    <option value="credit-card">Credit Card (20% p.a.)</option>
+                    <option value="personal-loan">Personal Loan (12% p.a.)</option>
+                    <option value="car-loan">Car Loan (9% p.a.)</option>
+                    <option value="store-card">Store Card (22% p.a.)</option>
+                    <option value="other">Other</option>
+                </select>
+                <label>Balance</label>
+                <input type="number" class="debt-balance" placeholder="e.g., 15000">
+                <label>Minimum Monthly Payment</label>
+                <input type="number" class="debt-payment" placeholder="e.g., 300">
+            `;
+            debtInputsContainer.appendChild(newDebtInput);
+        }
+
+        function removeDebt(button) {
+            button.parentElement.remove();
+            debtCount--;
+        }
+
+        function calculateSavings() {
+            const debtInputs = document.querySelectorAll('.debt-input');
+            let totalDebt = 0;
+            let totalCurrentPayments = 0;
+
+            debtInputs.forEach(input => {
+                const balance = parseFloat(input.querySelector('.debt-balance').value) || 0;
+                const payment = parseFloat(input.querySelector('.debt-payment').value) || 0;
+                
+                totalDebt += balance;
+                totalCurrentPayments += payment;
+            });
+
+            if (totalDebt === 0) {
+                alert('Please enter at least one debt amount');
+                return;
+            }
+
+            // Calculate new consolidated payment at 5.89% over 25 years
+            const rate = 0.0589 / 12; // Monthly rate
+            const periods = 25 * 12; // 25 years
+            const newPayment = totalDebt * (rate * Math.pow(1 + rate, periods)) / (Math.pow(1 + rate, periods) - 1);
+            
+            const monthlySavings = totalCurrentPayments - newPayment;
+            const annualSavings = monthlySavings * 12;
+
+            // Update results
+            document.getElementById('total-debt').textContent = '$' + totalDebt.toLocaleString();
+            document.getElementById('current-payments').textContent = '$' + Math.round(totalCurrentPayments).toLocaleString();
+            document.getElementById('new-payment').textContent = '$' + Math.round(newPayment).toLocaleString();
+            document.getElementById('monthly-savings').textContent = '$' + Math.round(monthlySavings).toLocaleString();
+            document.getElementById('annual-savings').textContent = '$' + Math.round(annualSavings).toLocaleString();
+            
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

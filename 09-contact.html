@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Navigator Broking - Melbourne Mortgage Broker | Santino Marinelli</title>
+    <meta name="description" content="Contact Navigator Broking for expert mortgage advice. Book a strategy call, call directly, or send a message. Melbourne's specialist mortgage broker Santino Marinelli.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, rgba(0, 181, 165, 0.9), rgba(0, 51, 102, 0.8)), url('Navigator Broking Stock photos/GettyImages-1148826177_B&W.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 80px;
+            text-align: center;
+        }
+        .contact-hero .hero-title {
+            color: white !important;
+        }
+        .contact-hero .hero-subtitle {
+            color: white !important;
+        }
+        .contact-options {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .contact-icon {
+            background: var(--light-blue);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        .contact-icon i {
+            font-size: 2rem;
+            color: var(--primary-blue);
+        }
+        .contact-form {
+            padding: 4rem 0;
+            background: white;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--gray-light);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--gray-dark);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .office-info {
+            padding: 4rem 0;
+            background: var(--light-blue);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .info-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .info-item i {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .map-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .map-container {
+            background: var(--gray-light);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .map-placeholder {
+            height: 400px;
+            background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-medium);
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="Navigator Logo Images PNG and JPG/PNG and JPG/Navigator-logo-500px.png" alt="Navigator Broking" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="01-index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                            <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                            <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                            <li><a href="06-investment-property.html">Investment Property</a></li>
+                            <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                            <li><a href="10-refinancing.html">Refinancing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="02-about.html" class="nav-link">About Santino</a></li>
+                    <li><a href="08-client-stories.html" class="nav-link">Client Stories</a></li>
+                    <li><a href="09-contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:0405678979" class="phone-btn"><i class="fas fa-phone"></i> Call Now</a>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="cta-btn">Book Strategy Call</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title">Get in Touch</h1>
+            <p class="hero-subtitle" style="max-width: 600px; margin: 0 auto;">Ready to secure your financing? Multiple ways to connect with Melbourne's specialist mortgage broker Santino Marinelli.</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Preferred Contact Method</h2>
+                <p>Fast, professional, and personalized service however you prefer to connect</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Book Strategy Call</h3>
+                    <p>Schedule a complimentary 15-minute strategy call to discuss your needs and see how I can help.</p>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem; margin: 1rem 0;">✓ No obligations<br>✓ Expert advice<br>✓ Personalized solutions</p>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="btn-primary" target="_blank">Book Now</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Directly</h3>
+                    <p>Speak with me directly for immediate assistance with your mortgage needs or urgent enquiries.</p>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem; margin: 1rem 0;">✓ Immediate assistance<br>✓ Direct access to director<br>✓ Quick initial assessment</p>
+                    <a href="tel:0405678979" class="btn-primary">Call Now</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Send Message</h3>
+                    <p>Fill out the form below with your details and I'll get back to you within 24 hours with personalized advice.</p>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem; margin: 1rem 0;">✓ Detailed response<br>✓ 24-hour reply time<br>✓ Confidential & secure</p>
+                    <a href="#contact-form" class="btn-secondary">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Me a Message</h2>
+                <p>Tell me about your situation and I'll provide personalized advice</p>
+            </div>
+            <div class="form-container">
+                <form id="contactForm" data-source="contact">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="financeGoal">What's your finance goal? *</label>
+                            <select id="financeGoal" name="financeGoal" required>
+                                <option value="">Please select...</option>
+                                <option value="first-home">First Home Purchase</option>
+                                <option value="investment">Investment Property</option>
+                                <option value="refinancing">Refinancing</option>
+                                <option value="debt-consolidation">Debt Consolidation</option>
+                                <option value="construction">Construction/Land</option>
+                                <option value="medical-loan">Medical Professional Loan</option>
+                                <option value="self-employed">Self-Employed Financing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="loanAmount">Estimated loan amount</label>
+                            <select id="loanAmount" name="loanAmount">
+                                <option value="">Please select...</option>
+                                <option value="under-500k">Under $500K</option>
+                                <option value="500k-1m">$500K - $1M</option>
+                                <option value="1m-2m">$1M - $2M</option>
+                                <option value="over-2m">Over $2M</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="profession">Your profession/industry</label>
+                        <input type="text" id="profession" name="profession" placeholder="e.g., Doctor, Consultant, Business Owner">
+                    </div>
+                    <div class="form-group">
+                        <label for="timeframe">When are you looking to proceed?</label>
+                        <select id="timeframe" name="timeframe">
+                            <option value="">Please select...</option>
+                            <option value="immediately">Immediately</option>
+                            <option value="1-3-months">1-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="6-12-months">6-12 months</option>
+                            <option value="exploring">Just exploring options</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell me about your situation *</label>
+                        <textarea id="message" name="message" placeholder="Please describe your current situation, any challenges you're facing, or specific questions you have..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="hearAbout">How did you hear about us?</label>
+                        <select id="hearAbout" name="hearAbout">
+                            <option value="">Please select...</option>
+                            <option value="google">Google Search</option>
+                            <option value="referral">Referral from friend/colleague</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="existing-client">Existing Client</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">Send My Message</button>
+                        <p style="font-size: 0.9rem; color: var(--gray-medium); margin-top: 1rem;">
+                            I'll respond within 24 hours with personalized advice for your situation
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Information -->
+    <section class="office-info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Office Information</h2>
+                <p>Serving Melbourne and surrounding areas with a focus on bayside suburbs</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p><a href="tel:0405678979" style="color: var(--primary-blue); text-decoration: none;">Call Direct</a></p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Mon-Fri 7am-7pm<br>Sat 9am-2pm</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p><a href="mailto:info@navigatorbroking.com.au" style="color: var(--primary-blue); text-decoration: none;">info@navigatorbroking.com.au</a></p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Response within 24 hours</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Service Area</h4>
+                    <p>Melbourne Bayside Suburbs</p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Servicing all of Australia</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-calendar"></i>
+                    <h4>Online Booking</h4>
+                    <p><a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" style="color: var(--primary-blue); text-decoration: none;">Book Strategy Call</a></p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Available 7 days a week</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-certificate"></i>
+                    <h4>License</h4>
+                    <p>Credit Representative No. 473888</p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Under Credit Licence 389328</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Professional Standards</h4>
+                    <p>MFAA Member</p>
+                    <p style="font-size: 0.9rem; color: var(--gray-medium);">Fully insured & compliant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Melbourne Bayside Location</h2>
+                <p>Proudly serving Melbourne's bayside suburbs with local market knowledge</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div style="text-align: center;">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;"></i>
+                        <p>Melbourne Bayside Suburbs</p>
+                        <p style="font-size: 0.9rem; opacity: 0.8;">Local expertise in Brighton, Hampton, Sandringham, and surrounding areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 4rem 0; background: var(--gray-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about working with Navigator Broking</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: white; border-radius: 12px; padding: 0; box-shadow: 0 5px 15px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div style="padding: 2rem; border-bottom: 1px solid #e5e7eb;">
+                        <h4 style="color: var(--navy); margin-bottom: 1rem;">How quickly can you assess my situation?</h4>
+                        <p style="color: var(--gray-dark); margin: 0;">I can provide an initial assessment within 24 hours of receiving your details. For more complex cases, I may need 2-3 days to thoroughly analyze all options.</p>
+                    </div>
+                    <div style="padding: 2rem; border-bottom: 1px solid #e5e7eb;">
+                        <h4 style="color: var(--navy); margin-bottom: 1rem;">Do you charge fees for initial consultations?</h4>
+                        <p style="color: var(--gray-dark); margin: 0;">No, initial consultations and assessments are complimentary. I only earn commission from successful loan settlements, so my interests are aligned with yours.</p>
+                    </div>
+                    <div style="padding: 2rem; border-bottom: 1px solid #e5e7eb;">
+                        <h4 style="color: var(--navy); margin-bottom: 1rem;">Can you help if I've been rejected by banks before?</h4>
+                        <p style="color: var(--gray-dark); margin: 0;">Absolutely. Many of my clients come to me after bank rejections. With access to 60+ lenders and specialist loan products, I often find solutions where others can't.</p>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h4 style="color: var(--navy); margin-bottom: 1rem;">Do you work with clients outside Melbourne?</h4>
+                        <p style="color: var(--gray-dark); margin: 0;">Yes, I service clients across Australia. While I specialize in Melbourne's bayside suburbs, I help clients nationwide with phone and video consultations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't let complex financing hold you back. Contact me today for expert advice tailored to your unique situation.</p>
+                <div class="cta-buttons">
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="btn-primary">Book Strategy Call</a>
+                    <a href="tel:0405678979" class="btn-secondary"><i class="fas fa-phone"></i> Call Me Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navigator Broking</h3>
+                    <p>Melbourne's specialist mortgage brokers for medical professionals and high-net-worth families.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:0405678979">Call Now</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@navigatorbroking.com.au">info@navigatorbroking.com.au</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Bayside Suburbs</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="03-medical-professionals.html">Medical Professionals</a></li>
+                        <li><a href="04-self-employed.html">Self-Employed Solutions</a></li>
+                        <li><a href="05-debt-consolidation.html">Debt Consolidation</a></li>
+                        <li><a href="06-investment-property.html">Investment Property</a></li>
+                        <li><a href="07-high-net-worth.html">High-Net-Worth Clients</a></li>
+                            <li><a href="10-refinancing.html">Refinancing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="02-about.html">About Santino</a></li>
+                        <li><a href="08-client-stories.html">Client Stories</a></li>
+                        <li><a href="09-contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Actions</h4>
+                    <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="footer-cta">Book Strategy Call</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Google Reviews"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-info">
+                    <p>&copy; 2025 Navigator Broking Pty Ltd. All rights reserved.</p>
+                    <p>Credit Representative No. 473888 under Credit Licence 389328</p>
+                    <p>This website contains general information only and does not take into account your objectives, financial situation or needs.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://outlook.office.com/bookwithme/user/1e0dcbf977214bf6aeb49e11dbef6a52%40navigatorbroking.com.au?anonymous" class="floating-btn">
+            <i class="fas fa-calendar"></i> Book Call
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="form-handler.js"></script>
+    <script>
+        // Enhanced form handling for contact page
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+                
+                // Basic validation
+                const requiredFields = ['firstName', 'lastName', 'phone', 'email', 'financeGoal', 'message'];
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const input = document.getElementById(field);
+                    if (!data[field] || !data[field].trim()) {
+                        isValid = false;
+                        input.style.borderColor = '#ef4444';
+                    } else {
+                        input.style.borderColor = '#d1d5db';
+                    }
+                });
+                
+                if (isValid) {
+                    // Show success message
+                    showNotification('Thank you for your enquiry! I\'ll respond within 24 hours with personalized advice for your situation.', 'success');
+                    contactForm.reset();
+                    
+                    // Track form submission
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'form_submit', {
+                            event_category: 'engagement',
+                            event_label: 'contact_form'
+                        });
+                    }
+                } else {
+                    showNotification('Please fill in all required fields.', 'error');
+                }
+            });
+            
+            // Real-time validation
+            const inputs = contactForm.querySelectorAll('input[required], select[required], textarea[required]');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.value.trim()) {
+                        this.style.borderColor = '#10b981';
+                    } else {
+                        this.style.borderColor = '#ef4444';
+                    }
+                });
+                
+                input.addEventListener('focus', function() {
+                    this.style.borderColor = '#3b82f6';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
